@@ -19,16 +19,24 @@ public class Main {
         float myFloutNumber = 2.99f;
 
 
-        System.out.println("Hello!");
-        System.out.println(name);
-        System.out.println(myNumber);
-        System.out.println(myLetter);
-        System.out.println(myDoubleNumber);
-        System.out.println(myTrouth);
-        System.out.println(name + LastName);
+            System.out.println("Hello!");
+            System.out.println(name);
+            System.out.println(myNumber);
+            System.out.println(myLetter);
+            System.out.println(myDoubleNumber);
+            System.out.println(myTrouth);
+            System.out.println(name + LastName);
+
+        int myInt1 = 9;
+        double myDouble1 = myInt1;
+            System.out.println(myDouble1);
 
         int x = 8;
         int y= 6;
-        System.out.println(x + y);
+            System.out.println(x + y);
+
+        double mydouble2 = 9.99;
+        int myint2 = (int) mydouble2;
+            System.out.println(myint2);
     }
 }
