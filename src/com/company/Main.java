@@ -1,66 +1,72 @@
 package com.company;
 
-import javax.print.attribute.standard.PDLOverrideSupported;
-
 public class Main {
-// tak się robi komentarz
 
-    /* tak kilko
-    linijkowy
-     */
+    private static void stringLesson() {
+        String name="John ";
+        String LastName="Wick";
+        int myNumber=8;
+        char myLetter='D';
+        boolean myTrouth=true;
+        double myDoubleNumber=1.99;
+        float myFloutNumber=2.99f;
 
+        System.out.println("Hello!");
+        System.out.println(name);
+        System.out.println(myNumber);
+        System.out.println(myLetter);
+        System.out.println(myDoubleNumber);
+        System.out.println(myTrouth);
+        System.out.println("Character name is " + name + LastName);
+    }
     public static void main(String[] args) {
-        String name = "John ";
-        String LastName = "Wick";
-        int myNumber = 8;
-        char myLetter = 'D';
-        boolean myTrouth = true;
-        double myDoubleNumber = 1.99;
-        float myFloutNumber = 2.99f;
-
-
-            System.out.println("Hello!");
-            System.out.println(name);
-            System.out.println(myNumber);
-            System.out.println(myLetter);
-            System.out.println(myDoubleNumber);
-            System.out.println(myTrouth);
-            System.out.println("Character name is " + name + LastName);
+        int[] tablica = {10,20,30,40,50,60,70};
+        int index = 0;
+        while (index < tablica.length) {
+            if (index % 2 != 0) {
+            //    System.out.println(tablica[index]);
+            }
+  //          System.out.println(tablica[index]);
+  //          index = index + 2;
+            index++;
+        }
+        for(int index1 = 0; index1 < tablica.length; index1++) {
+        System.out.println(tablica[index1]);
+        }
 
 // rozszerzanie
-        int myInt1 = 9;
-        double myDouble1 = myInt1;
-            System.out.println(myDouble1);
+        int myInt1=9;
+        double myDouble1=myInt1;
+        System.out.println(myDouble1);
 
 // dodanie
-        int x = 8;
-        int y= 6;
-            System.out.println(" dodanie x i y to " + x + y);
+        int x=8;
+        int y=6;
+        System.out.println(" dodanie x i y to " + x + y);
 
 // zwężanie
-        double mydouble2 = 9.99;
-        int myint2 = (int) mydouble2;
-            System.out.println(myint2);
+        double mydouble2=9.99;
+        int myint2=(int) mydouble2;
+        System.out.println(myint2);
 
 // dlugosc tekstu
-         String txt = "serial wiedzmin to gniot";
-            System.out.println("The length of the text is " +txt.length() );
+        String txt="serial wiedzmin to gniot";
+        System.out.println("The length of the text is " + txt.length());
 
 // matma
         System.out.println(Math.random());
 
 // if else else if statement
-        int time = 22;
-        if (time <10) {
+        int time=22;
+        if (time < 10) {
             System.out.println("good morning");
-        } else if (time <20) {
+        } else if (time < 20) {
             System.out.println("good day");
         } else {
             System.out.println("Good evening");
         }
-
 // switche
-        int day = 7;
+        int day=7;
         switch (day) {
             case 1:
                 System.out.println("Monday");
@@ -85,16 +91,19 @@ public class Main {
                 break;
             default:
                 System.out.println("Looking forward for the weekend");
-
-              }
-
+        }
 //loops
-        int z = 1;
-        while( z < 4 ) {
-            System.out.print("value of z : " + z );
+        int z=1;
+        while (z < 4) {
+            System.out.print("value of z : " + z);
             z++;
             System.out.print("\n");
         }
+        int i = 0;
+        while (i < 5) {
+            System.out.println(i);
+            i++;
         }
+    }
     }
 
