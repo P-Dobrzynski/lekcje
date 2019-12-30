@@ -85,12 +85,16 @@ public class Main {
                 break;
             default:
                 System.out.println("Looking forward for the weekend");
-        }
+
+              }
 
 //loops
-        
-
-
+        int z = 1;
+        while( z < 4 ) {
+            System.out.print("value of z : " + z );
+            z++;
+            System.out.print("\n");
+        }
         }
     }
 
