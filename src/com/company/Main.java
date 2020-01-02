@@ -2,36 +2,38 @@ package com.company;
 
 public class Main {
 
-    private static void stringLesson() {
-        String name="John ";
-        String LastName="Wick";
-        int myNumber=8;
-        char myLetter='D';
-        boolean myTrouth=true;
-        double myDoubleNumber=1.99;
-        float myFloutNumber=2.99f;
 
-        System.out.println("Hello!");
-        System.out.println(name);
-        System.out.println(myNumber);
-        System.out.println(myLetter);
-        System.out.println(myDoubleNumber);
-        System.out.println(myTrouth);
-        System.out.println("Character name is " + name + LastName);
-    }
-    public static void main(String[] args) {
-        int[] tablica = {10,20,30,40,50,60,70};
-        int index = 0;
+//    private static void stringLesson() {
+//        String name="John ";
+//        String LastName="Wick";
+//        int myNumber=8;
+//        char myLetter='D';
+//        boolean myTrouth=true;
+//        double myDoubleNumber=1.99;
+//        float myFloutNumber=2.99f;
+//
+//        System.out.println("Hello!");
+//        System.out.println(name);
+//        System.out.println(myNumber);
+//        System.out.println(myLetter);
+//        System.out.println(myDoubleNumber);
+//        System.out.println(myTrouth);
+//        System.out.println("Character name is " + name + LastName);
+//    }
+
+       public static void main(String[] args) {
+        int[] tablica={10, 20, 30, 40, 50, 60, 70};
+        int index=0;
         while (index < tablica.length) {
             if (index % 2 != 0) {
-            //    System.out.println(tablica[index]);
+                //    System.out.println(tablica[index]);
             }
-  //          System.out.println(tablica[index]);
-  //          index = index + 2;
+            //          System.out.println(tablica[index]);
+            //          index = index + 2;
             index++;
         }
-        for(int index1 = 0; index1 < tablica.length; index1++) {
-        System.out.println(tablica[index1]);
+        for (int index1=0; index1 < tablica.length; index1++) {
+            System.out.println(tablica[index1]);
         }
 
 // rozszerzanie
@@ -66,7 +68,7 @@ public class Main {
             System.out.println("Good evening");
         }
 // switche
-        int day=7;
+        int day=3;
         switch (day) {
             case 1:
                 System.out.println("Monday");
@@ -93,17 +95,40 @@ public class Main {
                 System.out.println("Looking forward for the weekend");
         }
 //loops
+
         int z=1;
         while (z < 4) {
             System.out.print("value of z : " + z);
             z++;
             System.out.print("\n");
         }
-        int i = 0;
+        int i=0;
         while (i < 5) {
             System.out.println(i);
             i++;
         }
-    }
-    }
+
+           int rowsCount = 4;
+           int columnsCount = 12;
+           for (int k = 1; k <= rowsCount; k++) {
+
+               for (int j = 1; j <= k; j++) {
+                   System.out.print("* ");
+               }
+               System.out.println ("");
+           }
+
+           for (int p = 0; p < 5; p++) {
+               for (int l = 0; l < 12 - p; l++) {
+                   System.out.print(" ");
+               }
+               for (int k = 0; k <= p; k++) {
+                   System.out.print("* ");
+               }
+               System.out.println();
+               }
+           }
+       }
+
+
 
