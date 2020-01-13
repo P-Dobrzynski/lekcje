@@ -122,35 +122,43 @@ public class Main {
 //                           System.out.println("");
 //           }
 
-        trojkat(8);
+//        trojkat(16);
+        int [] tab1 = { 2, 4, 5, 8, 10, 12, 14, 16};
+        int x = 5;
+        int y = 6;
+        zanied2(tab1, x);
+        zanied2(tab1, y);
     }
 
-    static void trojkat(int wysokosc) {
+//    static void trojkat(int wysokosc) {
+//
+//        int rowsCount1=wysokosc;
+//        int columnsCount1=rowsCount1 * 2;
+//        for (int p=0; p < rowsCount1; p++) {
+//            for (int l=0; l < columnsCount1 - 2 * p; l++) {
+//                System.out.print(" ");
+//            }
+//            for (int k=0; k < 2 * p + 1; k++) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//    }
 
-        int rowsCount1=wysokosc;
-        int columnsCount1=rowsCount1 * 2;
-        for (int p=0; p < rowsCount1; p++) {
-            for (int l=0; l < columnsCount1 - 2 * p; l++) {
-                System.out.print(" ");
+    static void zanied2(int [] tab1, int war1) {
+        boolean z = false;
+        for (int i=0; i < tab1.length; i++) {
+            if (tab1[i] == war1) {
+                System.out.println("wartość" + " " + war1 + " występuje w tablicy ");
+                z = true;
+                break;
             }
-            for (int k=0; k < 2 * p + 1; k++) {
-                System.out.print("* ");
-            }
-            System.out.println();
+        }
+        if (z == false ) {
+            System.out.println("wartość" + " " + war1 + " " + "nie występuje w tablicy");
         }
     }
-    static void zanied2() {
-        int [] tablica1={1, 2, 4, 6, 8, 11, 12};
-        int punkt1=5;
-        int punkt2=6;
-
-        for (int i=0; i < tablica1.length; i++) {
-            if (tablica1[i] == punkt1 ) {
-                System.out.println("wartość" + punkt1 + " występuje w tablicy ");
-            } else {
-                System.out.println("wartość" + punkt1 + " nie wystepuje w tablicy");
-            }
-        }
-    }
-    // DUPA
 }
+
+    // DUPA
+
